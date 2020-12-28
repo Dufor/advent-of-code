@@ -1,6 +1,9 @@
 const fs = require('fs');
-const input = fs.readFileSync('input.txt', 'utf-8').trim().split('\n').map(el => el.split(''));
-
+const input = fs
+  .readFileSync('input.txt', 'utf-8')
+  .trim()
+  .split('\n')
+  .map(el => el.split(''));
 
 const getNextRoundSeat = (seatIndex, currentSeats, topSeats = [], bottomSeats = []) => {
   const currentSeat = currentSeats[seatIndex];
